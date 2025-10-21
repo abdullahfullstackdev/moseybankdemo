@@ -6,8 +6,8 @@
     "installCommand": "yarn install",
     "devCommand": "yarn dev",
     "functions": {
-        "apps/frontend/src/app/api/**/*.ts": {
-            "runtime": "nodejs18.x"
+        "src/app/api/**/*.ts": {
+            "runtime": "nodejs20.x"
         }
     },
     "headers": [
