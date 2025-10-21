@@ -5,11 +5,6 @@
     "outputDirectory": ".next",
     "installCommand": "yarn install",
     "devCommand": "yarn dev",
-    "functions": {
-        "src/app/api/**/*.ts": {
-            "runtime": "nodejs20.x"
-        }
-    },
     "headers": [
         {
             "source": "/preview",
