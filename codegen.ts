@@ -28,7 +28,7 @@ const config: CodegenConfig = {
         // untill multiple recursions are supported, this needs to
         // be disabled when there's more then one component that
         // will use recursion
-        recursion: true,
+        recursion: false,
 
         // The GQL tag to be used to identify inline GraphQL queries
         gqlTagName: 'gql',
