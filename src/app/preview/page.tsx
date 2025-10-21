@@ -1,25 +1,17 @@
 import "server-only";
-import { createClient, AuthMode } from "@remkoj/optimizely-graph-client";
+import { createEditPageComponent } from "@remkoj/optimizely-cms-nextjs/preview";
 import { getContentById } from "@gql/functions";
 import { setupFactory } from "@components/factory";
-import { createEditPageComponent } from "@remkoj/optimizely-cms-nextjs/preview";
-
+import { createClient } from "@remkoj/optimizely-graph-client";
 
 export default createEditPageComponent(setupFactory(), {
   loader: getContentById,
-  clientFactory: (token?: string) => {
-    const client = createClient(undefined, token, {
-      nextJsFetchDirectives: true,
-      cache: false,
-      queryCache: false,
-    });
-    if (token) {
-      client.updateAuthentication(AuthMode.HMAC);
-      client.enablePreview();
-    }
-    return client;
-  },
-  refreshTimeout: 500,
+  clientFactory: (token?: string) => createClient(undefined, token, {
+    nextJsFetchDirectives: true,
+    cache: false,
+    queryCache: false,
+  }),
+  refreshTimeout: 500, // Enable this line when you have issues with the preview not updating at all
 });
 
 export const dynamic = "force-dynamic";
