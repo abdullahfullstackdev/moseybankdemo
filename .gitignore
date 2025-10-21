@@ -38,3 +38,8 @@ next-env.d.ts
 # Site configuration
 src/site-config.ts
 certificates
+
+# Yarn cache and unplugged files (large binary files)
+.yarn/unplugged/
+.yarn/cache/
+.yarn/install-state.gz
