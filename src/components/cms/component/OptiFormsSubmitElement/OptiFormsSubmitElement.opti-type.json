@@ -1,0 +1,34 @@
+{
+  "key": "OptiFormsSubmitElement",
+  "displayName": "Submit button",
+  "description": "",
+  "baseType": "component",
+  "sortOrder": 0,
+  "mayContainTypes": [],
+  "mediaFileExtensions": [],
+  "compositionBehaviors": [
+    "formsElementEnabled"
+  ],
+  "properties": {
+    "Label": {
+      "type": "string",
+      "displayName": "Label",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 100,
+      "editorSettings": {}
+    },
+    "Tooltip": {
+      "type": "string",
+      "displayName": "Tooltip",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 300,
+      "editorSettings": {}
+    }
+  }
+}

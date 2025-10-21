@@ -1,0 +1,30 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "framework": "nextjs",
+    "buildCommand": "yarn build",
+    "outputDirectory": ".next",
+    "installCommand": "yarn install",
+    "devCommand": "yarn dev",
+    "functions": {
+        "apps/frontend/src/app/api/**/*.ts": {
+            "runtime": "nodejs18.x"
+        }
+    },
+    "headers": [
+        {
+            "source": "/preview",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "no-cache, no-store, must-revalidate"
+                }
+            ]
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/preview",
+            "destination": "/preview"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+  "key": "OptiFormsSelectionElement",
+  "displayName": "Selection",
+  "description": "",
+  "baseType": "component",
+  "sortOrder": 0,
+  "mayContainTypes": [],
+  "mediaFileExtensions": [],
+  "compositionBehaviors": [
+    "formsElementEnabled"
+  ],
+  "properties": {
+    "Label": {
+      "type": "string",
+      "displayName": "Label",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 100,
+      "editorSettings": {}
+    },
+    "Placeholder": {
+      "type": "string",
+      "displayName": "Placeholder",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 200,
+      "editorSettings": {}
+    },
+    "Tooltip": {
+      "type": "string",
+      "displayName": "Tooltip",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 300,
+      "editorSettings": {}
+    },
+    "Options": {
+      "type": "json",
+      "format": "OptionListProperty",
+      "displayName": "Options",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 800,
+      "editorSettings": {}
+    },
+    "AllowMultiSelect": {
+      "type": "boolean",
+      "displayName": "AllowMultiSelect",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 900,
+      "editorSettings": {}
+    },
+    "Validators": {
+      "type": "json",
+      "format": "ValidatorListProperty",
+      "displayName": "Validators",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 1000,
+      "editorSettings": {}
+    },
+    "AutoComplete": {
+      "type": "string",
+      "displayName": "AutoComplete",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 1100,
+      "editorSettings": {}
+    }
+  }
+}

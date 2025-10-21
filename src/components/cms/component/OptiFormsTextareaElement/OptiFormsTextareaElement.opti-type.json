@@ -1,0 +1,75 @@
+{
+  "key": "OptiFormsTextareaElement",
+  "displayName": "Textarea",
+  "description": "",
+  "baseType": "component",
+  "sortOrder": 0,
+  "mayContainTypes": [],
+  "mediaFileExtensions": [],
+  "compositionBehaviors": [
+    "formsElementEnabled"
+  ],
+  "properties": {
+    "Label": {
+      "type": "string",
+      "displayName": "Label",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 100,
+      "editorSettings": {}
+    },
+    "Placeholder": {
+      "type": "string",
+      "displayName": "Placeholder",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 200,
+      "editorSettings": {}
+    },
+    "Tooltip": {
+      "type": "string",
+      "displayName": "Tooltip",
+      "description": "",
+      "localized": true,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 300,
+      "editorSettings": {}
+    },
+    "PredefinedValue": {
+      "type": "string",
+      "displayName": "PredefinedValue",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 400,
+      "editorSettings": {}
+    },
+    "Validators": {
+      "type": "json",
+      "format": "ValidatorListProperty",
+      "displayName": "Validators",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 900,
+      "editorSettings": {}
+    },
+    "AutoComplete": {
+      "type": "string",
+      "displayName": "AutoComplete",
+      "description": "",
+      "localized": false,
+      "required": false,
+      "group": "Information",
+      "sortOrder": 1100,
+      "editorSettings": {}
+    }
+  }
+}
